@@ -210,7 +210,7 @@ uem.x.scatter_forward()
 
 
 # Guardado de la malla y los campos calculados en archivos XDMF y NPY para su posterior análisis
-with XDMFFile(MPI.COMM_WORLD, "plasma_fields_graf.xdmf", "w") as xdmf:
+with XDMFFile(MPI.COMM_WORLD, "plasma_fields.xdmf", "w") as xdmf:
     xdmf.write_mesh(mesh)
     xdmf.write_function (u_out)
     xdmf.write_function (B_out)
