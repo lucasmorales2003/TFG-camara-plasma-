@@ -20,6 +20,7 @@ Ambas simulaciones están orientadas al estudio de fuentes de iones ECR y proces
 - Matplotlib
 - Multiprocessing
 - tqdm
+- Gmsh
 
 Se recomienda utilizar un entorno virtual o entorno basado en Docker para ejecutar los scripts.
 
