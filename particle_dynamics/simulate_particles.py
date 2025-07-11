@@ -17,7 +17,7 @@ import time
 import csv
   
 # Leer la malla y los campos eléctricos desde archivos externos
-with XDMFFile(MPI.COMM_WORLD, "plasma_fields_graf.xdmf", "r") as xdmf:
+with XDMFFile(MPI.COMM_WORLD, "plasma_fields.xdmf", "r") as xdmf:
     mesh = xdmf.read_mesh()
 
 u_values = np.load("E_dg_graf.npy")
