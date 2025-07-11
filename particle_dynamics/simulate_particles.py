@@ -288,7 +288,7 @@ def get_histogram(x, y, z, vx, vy, vz, xs):
         fig2e.colorbar(c, ax=ax, label='Densidad de energía')
 
     # Guarda las figuras en la carpeta correspondiente
-    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./densidades/"
+    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./"
     fig1_xy.suptitle(f"Distribución de densidad de partículas en el plano XY. Número de partículas: {npart}. Campo B = {B_ext} T",
                     fontsize=16, fontweight='bold')
     fig1_xz.suptitle(f"Distribución de densidad de partículas en el plano XZ. Número de partículas: {npart}. Campo B = {B_ext} T",
@@ -379,7 +379,7 @@ def get_histogram_electron(x, y, z, vx, vy, vz, xs):
     ax_e_xz.set_ylabel('z')
     fig_e_xz.colorbar(e_xz, ax=ax_e_xz, label='Densidad de energía')
     # Guardar figuras
-    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./densidades/"
+    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./"
 
     fig_xy.suptitle(f"Densidad de electrones en el plano XY. N = {npart}. B = {B_ext} T", fontsize=14, fontweight='bold')
     fig_xz.suptitle(f"Densidad de electrones en el plano XZ. N = {npart}. B = {B_ext} T", fontsize=14, fontweight='bold')
@@ -494,7 +494,7 @@ def get_paths(e_path,p_path,tao,electricfield,xs,B_ext):
 
 
 
-    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./densidades/"
+    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./"
 
     plt.tight_layout()
 
@@ -526,7 +526,7 @@ def getfieldsgraph(Ex,Ey,Ez,tao,xs):
     plt.grid(True)
     plt.tight_layout()
 
-    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./densidades/"   
+    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./"   
     fig6.savefig(f"{carpeta_salida}electric_vs_t_B{xs}.png", dpi=300)
 
 
@@ -547,7 +547,7 @@ def getresonance(B_ext_values,E_final):
     plt.grid(True)
     plt.tight_layout()
 
-    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./densidades/"   
+    carpeta_salida = "/home/lucas/fenicsx/Pillbox/densidades2/" if host_actual == "ESSB145" else "./"   
     fig7.savefig(f"{carpeta_salida}resonance.png", dpi=300)
 
 
